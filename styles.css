@@ -1,0 +1,386 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+    scroll-padding-top:80px;
+}
+
+body{
+    font-family:Segoe UI, Arial, sans-serif;
+    line-height:1.7;
+    background:#ffffff;
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+.navbar{
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    height:80px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 8%;
+
+    background:#ffffff;
+
+    box-shadow:
+    0 2px 20px rgba(0,0,0,.08);
+}
+
+.logo{
+    font-size:1.3rem;
+    font-weight:700;
+    color:#111;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:50px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#777;
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#11f6ff;
+}
+
+#home{
+    scroll-margin-top:0;
+}
+
+#about,
+#design{
+    scroll-margin-top:100px;
+}
+
+/* ==========================
+   HERO BANNER
+========================== */
+
+.hero{
+    position:relative;
+
+    height:320px;
+
+    background:#000;
+
+    overflow:hidden;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero::before{
+    content:"";
+
+    position:absolute;
+    inset:-20%;
+
+    background:
+    radial-gradient(
+        circle,
+        rgba(17,246,255,.18),
+        transparent 70%
+    );
+
+    filter:blur(100px);
+
+    animation:pulse 8s ease-in-out infinite;
+}
+
+/* ==========================
+   EQUALIZER
+========================== */
+
+.equalizer{
+    position:absolute;
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    gap:12px;
+}
+
+.equalizer span{
+
+    width:12px;
+
+    border-radius:999px;
+
+    background:
+    linear-gradient(
+        to top,
+        #00f6ff,
+        #00ff95,
+        #ffe600,
+        #ff8400,
+        #ff008c
+    );
+
+    box-shadow:
+    0 0 10px #00f6ff,
+    0 0 20px #00f6ff,
+    0 0 40px rgba(0,246,255,.8);
+
+    animation:equalizer 1.5s ease-in-out infinite;
+}
+
+/* Random animations */
+
+.equalizer span:nth-child(1){animation-duration:.8s;}
+.equalizer span:nth-child(2){animation-duration:1.5s;}
+.equalizer span:nth-child(3){animation-duration:1.1s;}
+.equalizer span:nth-child(4){animation-duration:2.0s;}
+.equalizer span:nth-child(5){animation-duration:1.4s;}
+.equalizer span:nth-child(6){animation-duration:.9s;}
+.equalizer span:nth-child(7){animation-duration:1.8s;}
+.equalizer span:nth-child(8){animation-duration:1.2s;}
+.equalizer span:nth-child(9){animation-duration:1.6s;}
+.equalizer span:nth-child(10){animation-duration:.7s;}
+
+.equalizer span:nth-child(11){animation-duration:1.9s;}
+.equalizer span:nth-child(12){animation-duration:1.3s;}
+.equalizer span:nth-child(13){animation-duration:.8s;}
+.equalizer span:nth-child(14){animation-duration:2.1s;}
+.equalizer span:nth-child(15){animation-duration:1.5s;}
+.equalizer span:nth-child(16){animation-duration:1.0s;}
+.equalizer span:nth-child(17){animation-duration:1.7s;}
+.equalizer span:nth-child(18){animation-duration:.9s;}
+.equalizer span:nth-child(19){animation-duration:2.2s;}
+.equalizer span:nth-child(20){animation-duration:1.2s;}
+
+.equalizer span:nth-child(21){animation-duration:1.5s;}
+.equalizer span:nth-child(22){animation-duration:.8s;}
+.equalizer span:nth-child(23){animation-duration:1.8s;}
+.equalizer span:nth-child(24){animation-duration:1.1s;}
+.equalizer span:nth-child(25){animation-duration:1.9s;}
+.equalizer span:nth-child(26){animation-duration:.7s;}
+.equalizer span:nth-child(27){animation-duration:2.0s;}
+.equalizer span:nth-child(28){animation-duration:1.3s;}
+.equalizer span:nth-child(29){animation-duration:1.1s;}
+.equalizer span:nth-child(30){animation-duration:1.6s;}
+
+@keyframes equalizer{
+
+    0%{
+        height:20px;
+    }
+
+    25%{
+        height:90px;
+    }
+
+    50%{
+        height:240px;
+    }
+
+    75%{
+        height:120px;
+    }
+
+    100%{
+        height:20px;
+    }
+
+}
+
+@keyframes pulse{
+
+    0%,100%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.35);
+    }
+
+}
+
+/* ==========================
+   MAIN CONTENT
+========================== */
+
+.section{
+    padding:100px 0;
+    background:white;
+}
+
+.container{
+    width:min(1100px,90%);
+    margin:auto;
+}
+
+.section h2{
+    text-align:center;
+    font-size:3rem;
+    margin-bottom:30px;
+    color:#14213d;
+}
+
+.section p{
+    max-width:900px;
+    margin:0 auto 20px auto;
+    font-size:1.1rem;
+    color:#555;
+}
+
+/* ==========================
+   DARK SECTION
+========================== */
+
+.dark{
+    background:#0d1527;
+}
+
+.dark h2{
+    color:white;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+    margin-top:50px;
+}
+
+.card{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.1);
+    padding:35px;
+    border-radius:18px;
+    color:white;
+}
+
+/* ==========================
+   FEATURES
+========================== */
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+.feature{
+    background:white;
+    padding:35px;
+    border-radius:18px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.08);
+
+    transition:.3s;
+}
+
+.feature:hover{
+    transform:translateY(-8px);
+}
+
+.icon{
+    font-size:2rem;
+}
+
+.feature h3{
+    margin:15px 0;
+}
+
+/* ==========================
+   IMPACT
+========================== */
+
+.impact{
+    background:#081120;
+    color:white;
+    padding:100px 0;
+}
+
+.impact h2{
+    text-align:center;
+    font-size:3rem;
+    margin-bottom:30px;
+}
+
+.impact p{
+    max-width:900px;
+    margin:0 auto 20px auto;
+    color:rgba(255,255,255,.8);
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        height:auto;
+        padding:20px;
+        gap:15px;
+    }
+
+    .nav-links{
+        gap:20px;
+    }
+
+    .hero{
+        height:260px;
+    }
+
+    .equalizer{
+        gap:6px;
+    }
+
+    .equalizer span{
+        width:8px;
+    }
+
+    .section h2{
+        font-size:2rem;
+    }
+
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+.footer{
+    background:#050b14;
+    border-top:1px solid rgba(255,255,255,.08);
+    padding:20px 0;
+}
+
+.footer-content{
+    width:min(1100px,90%);
+    margin:auto;
+    text-align:center;
+}
+
+.footer-content p{
+    color:rgba(255,255,255,.6);
+    font-size:0.9rem;
+    letter-spacing:.5px;
+}

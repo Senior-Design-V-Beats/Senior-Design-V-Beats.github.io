@@ -20,6 +20,21 @@
             <li><a href="#top">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#design">Design</a></li>
+            <li class="phase-menu">
+                <details>
+                    <summary>Phase 1</summary>
+                    <ul class="phase-submenu">
+                        <li><a href="#phase-1">Phase 1 Overview</a></li>
+                        <li><a href="#literature-review">Literature Review</a></li>
+                        <li><a href="#commercial-applications">Commercial Applications</a></li>
+                        <li><a href="#needs-specifications">Needs and Specifications</a></li>
+                        <li><a href="#concept-selection">Concept Generation and Selection</a></li>
+                        <li><a href="#technical-analysis">Technical Analysis and Engineering Design</a></li>
+                        <li><a href="#deliverables-budget">Deliverables and Budget</a></li>
+                        <li><a href="#project-schedule">Project Schedule</a></li>
+                    </ul>
+                </details>
+            </li>
         </ul>
 
     </nav>
@@ -191,6 +206,362 @@
 
     </section>
 
+    <!-- PHASE 1 -->
+
+    <section id="phase-1" class="section phase-section">
+        <div class="container">
+            <p class="phase-eyebrow">SENIOR DESIGN · PROJECT DEVELOPMENT</p>
+            <h2>Phase 1</h2>
+            <p class="phase-intro">
+                Explore the research, user needs, concepts, engineering plans, and project resources
+                guiding the V-BEATS design.
+            </p>
+
+            <nav class="phase-index" aria-label="Phase 1 sections">
+                <a href="#literature-review"><span>01</span>Literature Review</a>
+                <a href="#commercial-applications"><span>02</span>Commercial Applications</a>
+                <a href="#needs-specifications"><span>03</span>Needs and Specifications</a>
+                <a href="#concept-selection"><span>04</span>Concept Generation and Selection</a>
+                <a href="#technical-analysis"><span>05</span>Technical Analysis and Engineering Design</a>
+                <a href="#deliverables-budget"><span>06</span>Deliverables and Budget</a>
+                <a href="#project-schedule"><span>07</span>Project Schedule (Gantt Chart)</a>
+            </nav>
+        </div>
+    </section>
+
+    <section id="literature-review" class="section phase-content">
+        <div class="container phase-content-inner">
+            <p class="phase-section-number">PHASE 1 · 01</p>
+            <h2>Literature Review</h2>
+            <p>
+                Our review explored commercial cameras and academic research that use automated
+                tracking and camera movement. These examples show useful approaches for filming
+                performers and switching views during live events.
+            </p>
+
+            <h3>AVer TR313V2 AI Auto-Tracking PTZ Camera</h3>
+            <p>
+                The AVer TR313V2 is a professional 4K pan-tilt-zoom camera, listed at approximately
+                $1,800. It can follow a presenter, track movement through preset zones, or combine
+                both modes. Its multiple video connections also make it suitable for broadcast
+                software such as OBS.
+            </p>
+            <p>
+                For V-BEATS, presenter tracking could keep the DJ in frame, while preset zones could
+                provide views of the DJ booth, turntables, and audience. A future system could build
+                on this idea by choosing views based on audio or crowd activity, rather than movement
+                alone.
+            </p>
+
+            <h3>OBSBOT Tail 2 AI-Powered PTZR Camera</h3>
+            <p>
+                The OBSBOT Tail 2 is a 4K camera designed for livestreamers and solo performers.
+                It offers AI subject tracking, automatic zoom, low-light image features, and a
+                rotating camera body for vertical video. It can also stream over a network.
+                Its listed price is approximately $1,199.
+            </p>
+            <p>
+                Its low-light features are relevant to dim venues, and network video could reduce
+                cable clutter. However, the cost of complete cameras may be high for our project.
+                We can use these products as references while focusing our design on the tracking,
+                camera movement, and video features our DJ system needs.
+            </p>
+
+            <h3>High-Speed Active Stereo Tracking Research</h3>
+            <p>
+                Academic research from Hiroshima University describes a tracking system that uses
+                mirrors and a fast-moving mirror controller to redirect one camera’s view. The
+                system alternates between two views and processes target movement at high speed.
+            </p>
+            <p>
+                Although V-BEATS does not need such extreme speed, this research demonstrates how
+                camera movement and view changes can be coordinated. It also suggests future ways
+                to trigger camera changes using audio peaks, beat timing, or lighting cues.
+            </p>
+
+            <h3>Key Takeaway</h3>
+            <p>
+                Existing systems show that automated tracking, preset viewing zones, low-light
+                performance, and responsive camera movement can improve live video. V-BEATS will
+                use these ideas to guide a practical two-camera system for following the DJ and
+                capturing the audience.
+            </p>
+        </div>
+    </section>
+
+    <section id="commercial-applications" class="section phase-content phase-content-alt">
+        <div class="container phase-content-inner">
+            <p class="phase-section-number">PHASE 1 · 02</p>
+            <h2>Commercial Applications</h2>
+            <p>
+                Examine how V-BEATS could serve DJs, musicians, venues, and independent creators
+                who need engaging video coverage without a dedicated camera crew.
+            </p>
+            <ul class="phase-topics">
+                <li>Potential users and live-event production settings</li>
+                <li>Existing products and competing production workflows</li>
+                <li>Accessibility, setup effort, and operating-cost considerations</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="needs-specifications" class="section phase-content">
+        <div class="container phase-content-inner">
+            <p class="phase-section-number">PHASE 1 · 03</p>
+            <h2>Needs and Specifications</h2>
+            <p>
+                V-BEATS is intended to give DJs and other performers polished live video without
+                requiring a camera crew. The sponsor is the primary stakeholder; performers are
+                also users, while in-person and livestream audiences are secondary stakeholders.
+            </p>
+
+            <h3>Customer Needs</h3>
+            <p>
+                The needs below summarize sponsor and user priorities. Priority is rated from 1
+                (lower) to 5 (higher).
+            </p>
+            <div class="requirements-table-wrap" role="region" aria-label="Product needs table" tabindex="0">
+                <table class="requirements-table">
+                    <caption>Table 1. Product Needs</caption>
+                    <thead>
+                        <tr><th scope="col">Category</th><th scope="col">ID</th><th scope="col">Need / Want</th><th scope="col">Priority</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Safety</td><td>S1</td><td>Operate safely around the DJ and audience</td><td>5</td></tr>
+                        <tr><td>Safety</td><td>S2</td><td>Do not impede the performance or the DJ’s or audience’s field of view</td><td>5</td></tr>
+                        <tr><td>Cost</td><td>C1</td><td>Be cost-effective</td><td>1</td></tr>
+                        <tr><td>Performance</td><td>P1</td><td>Automatically track the DJ and audience simultaneously</td><td>5</td></tr>
+                        <tr><td>Performance</td><td>P2</td><td>Provide clear, high-quality video</td><td>5</td></tr>
+                        <tr><td>Performance</td><td>P3</td><td>Allow manual switching between camera angles</td><td>3</td></tr>
+                        <tr><td>Performance</td><td>P4</td><td>Switch between camera angles automatically</td><td>5</td></tr>
+                        <tr><td>Performance</td><td>P5</td><td>Support a live-streaming environment</td><td>4</td></tr>
+                        <tr><td>Performance</td><td>P6</td><td>Be usable independently</td><td>5</td></tr>
+                        <tr><td>Performance</td><td>P7</td><td>Create clips for social media</td><td>3</td></tr>
+                        <tr><td>Performance</td><td>P8</td><td>Record video viewable at a minimum resolution of 4K</td><td>5</td></tr>
+                        <tr><td>Performance</td><td>P9</td><td>Operate continuously for at least 5 hours</td><td>3</td></tr>
+                        <tr><td>Performance</td><td>P10</td><td>Be practical and easy to operate</td><td>5</td></tr>
+                        <tr><td>User Experience</td><td>U1</td><td>Be relatively easy to set up and use</td><td>5</td></tr>
+                        <tr><td>User Experience</td><td>U2</td><td>Require no more than one person to set up and use</td><td>4</td></tr>
+                        <tr><td>User Experience</td><td>U3</td><td>Maintain acceptable camera quality during performances</td><td>5</td></tr>
+                        <tr><td>User Experience</td><td>U4</td><td>Be portable</td><td>3</td></tr>
+                        <tr><td>Features</td><td>F1</td><td>Incorporate with lasers and stage lights</td><td>2</td></tr>
+                        <tr><td>Features</td><td>F2</td><td>Consider a 360-degree camera</td><td>3</td></tr>
+                        <tr><td>Features</td><td>F3</td><td>Adapt to different lighting environments</td><td>5</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Product Specifications</h3>
+            <p>
+                These draft specifications turn selected needs into measurable targets. “Limit”
+                values are reproduced from the project table and should be confirmed by the team.
+            </p>
+            <div class="requirements-table-wrap" role="region" aria-label="Product specifications table" tabindex="0">
+                <table class="requirements-table">
+                    <caption>Table 2. Product Specifications</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Need ID</th><th scope="col">Metric</th><th scope="col">Target</th>
+                            <th scope="col">Limit</th><th scope="col">Priority</th><th scope="col">Units</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>P1</td><td>Tracking accuracy of point of interest</td><td>&gt;95%</td><td>&gt;85%</td><td>5</td><td>%</td></tr>
+                        <tr><td>P2</td><td>DJ and audience streaming</td><td>Streamed simultaneously</td><td>Captured together during performance</td><td>4</td><td>—</td></tr>
+                        <tr><td>P3, P8</td><td>Frame rate</td><td>&gt;60</td><td>&gt;30</td><td>3</td><td>fps</td></tr>
+                        <tr><td>P9</td><td>Video resolution</td><td>&gt;4K</td><td>&gt;1080p</td><td>5</td><td>p</td></tr>
+                        <tr><td>P10</td><td>Operating time</td><td>&gt;4</td><td>&gt;1</td><td>5</td><td>hours</td></tr>
+                        <tr><td>P4, P5</td><td>Camera switching delay</td><td>&gt;1</td><td>&gt;2</td><td>3</td><td>seconds</td></tr>
+                        <tr><td>P6</td><td>Live-streaming</td><td>Continuous with performance</td><td>Livestreamed with delay</td><td>3</td><td>—</td></tr>
+                        <tr><td>U4</td><td>DJ input</td><td>0</td><td>&lt;5</td><td>5</td><td>inputs</td></tr>
+                        <tr><td>U5</td><td>System weight</td><td>&lt;30</td><td>&lt;100</td><td>3</td><td>lbs</td></tr>
+                        <tr><td>U1</td><td>Setup time</td><td>&lt;10</td><td>&lt;20</td><td>4</td><td>minutes</td></tr>
+                        <tr><td>P1, P3</td><td>Autofocus time</td><td>&lt;1</td><td>&lt;2</td><td>5</td><td>seconds</td></tr>
+                        <tr><td>U2, P7</td><td>Operators needed</td><td>0</td><td>&lt;1</td><td>5</td><td>people</td></tr>
+                        <tr><td>C1</td><td>Cost</td><td>&lt;$5,000</td><td>&lt;$10,000</td><td>2</td><td>USD</td></tr>
+                        <tr><td>F3</td><td>Lighting quality</td><td>&gt;500</td><td>&gt;300</td><td>5</td><td>lux</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="requirements-note">
+                <strong>Draft review:</strong> Confirm the need-ID mappings before baselining the
+                specifications. For example, P9 and P10 refer to different metrics in the two
+                tables, and U5 appears in the specifications but not in the needs table.
+            </p>
+            <p>
+                The team also developed a Quality Function Deployment (QFD) matrix to compare
+                customer needs with engineering specifications and help prioritize concept
+                development. The detailed matrix is included in the appendix.
+            </p>
+        </div>
+    </section>
+
+    <section id="concept-selection" class="section phase-content phase-content-alt">
+        <div class="container phase-content-inner">
+            <p class="phase-section-number">PHASE 1 · 04</p>
+            <h2>Concept Generation and Selection</h2>
+            <p>
+                The team brainstormed options for the camera system, lighting, focus, camera
+                movement, controls, and added features. These alternatives can be compared against
+                the customer needs and specifications to select a practical V-BEATS design.
+            </p>
+            <div class="requirements-table-wrap" role="region" aria-label="Concept generation options" tabindex="0">
+                <table class="requirements-table concept-table">
+                    <caption>Concept Generation Options</caption>
+                    <thead>
+                        <tr><th scope="col">Design Area</th><th scope="col">Options to Consider</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Camera System</th>
+                            <td><span class="concept-option">1 camera</span><span class="concept-option">2 cameras</span><span class="concept-option">3 cameras</span><span class="concept-option">PTZ camera</span><span class="concept-option">360-degree camera</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Lighting Options</th>
+                            <td><span class="concept-option">LED light bar</span><span class="concept-option">Ring light bar</span><span class="concept-option">Dynamic exposure and lighting adjustment</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Focusing Options</th>
+                            <td><span class="concept-option">Manual focus</span><span class="concept-option">Autofocus</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Camera Movement or Mounting</th>
+                            <td><span class="concept-option">Fixed mount</span><span class="concept-option">Curved rail system</span><span class="concept-option">Tilting base</span><span class="concept-option">Rotating platform</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Camera Control Method</th>
+                            <td><span class="concept-option">Buttons on DJ booth</span><span class="concept-option">Software control</span><span class="concept-option">Automated AI control</span><span class="concept-option">Switch between cameras</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Added Features</th>
+                            <td><span class="concept-option">Live streaming</span><span class="concept-option">Split-screen viewing</span><span class="concept-option">Audience tracking</span><span class="concept-option">Camera-angle switching</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="concept-gallery" aria-label="V-BEATS design concept sketches">
+                <figure class="concept-figure">
+                    <img src="assets/concepts/concept-1.png" alt="Side and top sketches of an automated camera carriage around a DJ booth, with a rotating camera joint and lighting.">
+                    <figcaption>
+                        <strong>Concept 1 · Automated camera carriage</strong>
+                        <span>A moving camera mount designed to capture the DJ from changing positions.</span>
+                    </figcaption>
+                </figure>
+                <figure class="concept-figure">
+                    <img src="assets/concepts/concept-2.png" alt="DJ booth concept with a direct video feed, audio splitter, manual camera controls, livestream playback, and a camera on a stand.">
+                    <figcaption>
+                        <strong>Concept 2 · DJ booth control station</strong>
+                        <span>A booth-based interface for camera controls, video, audio, and livestream playback.</span>
+                    </figcaption>
+                </figure>
+                <figure class="concept-figure">
+                    <img src="assets/concepts/concept-3.png" alt="360-degree camera concept on an adjustable tripod, showing views around a DJ booth and audience.">
+                    <figcaption>
+                        <strong>Concept 3 · 360-degree camera</strong>
+                        <span>A single elevated camera captures the DJ and audience across a wide field of view.</span>
+                    </figcaption>
+                </figure>
+                <figure class="concept-figure concept-figure-combined">
+                    <img src="assets/concepts/concept-4.png" alt="Combined V-BEATS concept showing overhead, side, and audience-facing cameras around a DJ booth connected to a camera and video switching unit.">
+                    <figcaption>
+                        <strong>Combined concept · Multi-camera DJ coverage</strong>
+                        <span>A coordinated overhead camera, DJ-side camera, audience-facing camera, and video switching unit for multiple performance angles.</span>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <h3>Concept Screening and Selection</h3>
+            <p>
+                The screening matrix compares four concepts with the integrated controller
+                concept as the reference. The weighted matrix then scores each concept against
+                criteria such as tracking, video quality, safety, setup, and cost.
+            </p>
+            <div class="concept-gallery selection-matrices" aria-label="V-BEATS concept selection matrices">
+                <figure class="concept-figure">
+                    <img src="assets/concepts/screening-matrix.png" alt="Concept screening matrix comparing four V-BEATS concepts. Concept 1 is dropped, Concepts 2 and 3 are considered, and Concept 4 continues with the highest net score.">
+                    <figcaption>
+                        <strong>Screening matrix</strong>
+                        <span>Concept 1 is dropped, Concepts 2 and 3 are considered, and the combined PTZ + AI Concept 4 advances.</span>
+                    </figcaption>
+                </figure>
+                <figure class="concept-figure">
+                    <img src="assets/concepts/weighted-selection-matrix.png" alt="Weighted concept selection matrix. Scores are 3.20 for Concept 1, 4.10 for Concept 2, 4.30 for Concept 3, and 4.80 for Concept 4.">
+                    <figcaption>
+                        <strong>Weighted selection matrix</strong>
+                        <span>The combined multi-camera PTZ + AI Concept 4 ranks highest at 4.80, followed by the 360-degree camera at 4.30, the integrated controller at 4.10, and the curved rail system at 3.20.</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <p class="selection-takeaway">
+                <strong>Selection outcome:</strong> The matrices identify the combined multi-camera
+                PTZ + AI system as the leading concept to continue developing.
+            </p>
+        </div>
+    </section>
+
+    <section id="technical-analysis" class="section phase-content">
+        <div class="container phase-content-inner">
+            <p class="phase-section-number">PHASE 1 · 05</p>
+            <h2>Plan for Technical Analysis and Engineering Design</h2>
+            <p>
+                Define the analyses and design work needed to verify that the proposed system can
+                move, mount, power, and operate its cameras reliably during a performance.
+            </p>
+            <ul class="phase-topics">
+                <li>Motor torque, speed, movement range, and tracking response</li>
+                <li>Mounting loads, structural bending, natural frequency, and vibration</li>
+                <li>System power, communication links, video quality, and operating duration</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="deliverables-budget" class="section phase-content phase-content-alt">
+        <div class="container phase-content-inner">
+            <p class="phase-section-number">PHASE 1 · 06</p>
+            <h2>Deliverables and Budget</h2>
+            <p>
+                Track the planned engineering outputs and equipment costs needed to build,
+                integrate, and demonstrate the V-BEATS prototype.
+            </p>
+            <ul class="phase-topics">
+                <li>Design documentation, analyses, and prototype components</li>
+                <li>Camera, motor, controller, mounting, power, and cabling costs</li>
+                <li>Integration, testing, demonstration, and final project documentation</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="project-schedule" class="section phase-content">
+        <div class="container phase-content-inner">
+            <p class="phase-section-number">PHASE 1 · 07</p>
+            <h2>Project Schedule (Gantt Chart)</h2>
+            <p>
+                Phase 1 tasks, dates, and predecessor relationships are shown below. Edit dates,
+                predecessor references, or progress directly in the chart; changes are saved in
+                this browser.
+            </p>
+            <div class="gantt-toolbar" aria-label="Gantt chart legend">
+                <div class="gantt-legend">
+                    <span><i class="legend-swatch legend-phase"></i> Phase / task group</span>
+                    <span><i class="legend-swatch legend-task"></i> Task</span>
+                    <span><i class="legend-swatch legend-progress"></i> Progress</span>
+                    <span><i class="legend-swatch legend-milestone"></i> Milestone</span>
+                    <span><i class="legend-line"></i> Dependency</span>
+                </div>
+                <p class="gantt-hint">Scroll the chart horizontally to see the full schedule.</p>
+            </div>
+            <div class="gantt-card">
+                <div id="gantt-chart" class="gantt-scroll" aria-label="Editable Phase 1 Gantt chart"></div>
+            </div>
+            <p class="schedule-note">
+                Planning note: “Motivation” lists predecessor 20SS, which points to “Combined /
+                Selected” on September 18, after Motivation starts on September 17. This
+                predecessor appears inconsistent with the dates and should be confirmed.
+            </p>
+        </div>
+    </section>
+
     <!-- IMPACT -->
 
     <section class="impact">
@@ -224,5 +595,6 @@
     </div>
     </footer>
 
+    <script src="script.js" defer></script>
 </body>
 </html>
